@@ -1,0 +1,28 @@
+@use "variables.module";
+
+.pane {
+  width: 18%;
+  background-color: variables.$background-colour-2;
+  color: variables.$grey-colour;
+
+  & > div {
+    padding: 12px;
+  }
+}
+
+.pane-button {
+  display: flex;
+  padding: 14px;
+  gap: 24px;
+  border-radius: 4px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #34353c;
+  }
+
+  &.selected {
+    background-color: #33343b;
+    color: variables.$light-colour;
+  }
+}
